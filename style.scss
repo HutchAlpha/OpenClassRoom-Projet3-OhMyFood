@@ -1,0 +1,73 @@
+/*Variable de couleur*/
+$background : #F3F3F3;
+$green : #99E2D0;
+$greenFont : #008766;
+$blue : #89C8FA;
+$blueFont : #003A68;
+$purple : #9356DC;
+/*Fin variable de couleur*/
+
+body {
+    margin: 0px;
+}
+/*!Style*/
+h1 {
+    font-size: 24px;
+    line-height: auto;
+  }
+p {
+    font-size: 18px;
+    line-height: auto;
+  }
+/*!FIn Style*/
+header {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+
+
+    .header__retour {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__imgRetour {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .header__location {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__logoprincipal {
+        width: 197px;
+        height: 36px;
+    }
+}
+
+.localisation{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: $green;
+
+    .localisation__img{
+    width: 12px ;
+    height: 16px;
+    }
+
+    .localisation__p{
+    size: 16px;
+    }
+}
