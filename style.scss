@@ -10,7 +10,8 @@ $purple : #9356DC;
 
 body {
     margin: 0px;
-    font: Romoto;
+    font-family: 'Poppins', sans-serif;
+
 }
 /*!Style*/
 h1 {
@@ -75,6 +76,8 @@ header {
 }
 .presentation{
     display: flex;
+    background-color: $background;
+    padding: 20px 0 50px 0 ;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -86,12 +89,14 @@ header {
     }
 
     .presentation__DecoulesResto{
-        width: 80%;text-align: center;
+        width: 80%;
+        text-align: center;
     }
     .presentation__BoutonRestau{
+        width: 218px;
+        height: 50px;
         display: inline-block;
         padding: 15px 30px; 
-        font-size: 18px; 
         font-weight: bold; 
         color: white; 
         text-align: center; 
@@ -99,8 +104,25 @@ header {
         background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%); 
         border: none; 
         border-radius: 50px;
-        cursor: pointer; 
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+}
+
+.fonctionnement{
+    width: 100%;
+    display: flex;
+    padding: 50px 0 50px 0 ;
+    flex-direction: column;gap: 2rem;
+    .fonctionnement__h1{
+        padding-left: 20px;
+    }
+
+    .fonctionnement__div{
+        width: 90%;
+        background-color: $background;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
