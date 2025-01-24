@@ -92,11 +92,16 @@ header .header__logoprincipal {
   color: white;
   text-align: center;
   text-decoration: none;
-  background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(180deg, #FC78DA 0%, #9356DC 100%);
   border: none;
   border-radius: 50px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.presentation__BoutonRestau:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, rgb(255, 136.3, 222.2246268657) 0%, rgb(155.1, 98.675, 222.625) 100%);
+  opacity: 0.9;
 }
 
 .fonctionnement {
@@ -284,7 +289,6 @@ header .header__logoprincipal {
   background-color: #353535;
   color: white;
   padding: 25px;
-  width: 100%;
 }
 @media (min-width: 1024px) {
   .footer {
@@ -338,9 +342,6 @@ header .header__logoprincipal {
   align-items: center;
   gap: 10px;
 }
-.footer__div p {
-  margin: 0;
-}
 .footer__icon {
   width: 16px;
   height: 16px;
@@ -351,10 +352,6 @@ header .header__logoprincipal {
 }
 .footer__link:hover {
   text-decoration: underline;
-}
-.footer p {
-  font-size: 16px;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

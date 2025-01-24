@@ -107,16 +107,24 @@ header {
         color: white; 
         text-align: center; 
         text-decoration: none; 
-        background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%); 
+        background: linear-gradient(180deg, #FC78DA 0%, #9356DC 100%); 
         border: none; 
         border-radius: 50px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+            background: linear-gradient(180deg, 
+                lighten(#FF79DA, 3%) 0%, 
+                lighten(#9356DC, 3%) 100%
+            );
+            opacity: 0.9;
+        }
     }
 }
 
 .fonctionnement {
-    $purple: #9356DC;
     padding: 2rem;
 
     &__h1 {
@@ -221,7 +229,6 @@ header {
         @media (min-width: 1024px) {
             flex-direction: row;
             flex-wrap: wrap;
-           
             gap: 50px 25px;
         }
     }
@@ -319,7 +326,6 @@ header {
     background-color: #353535;
     color: white;
     padding: 25px;
-    width: 100%;
 
     @media (min-width: 1024px) {
         display: flex;
@@ -373,9 +379,6 @@ header {
         align-items: center;
         gap: 10px;
         
-        p {
-            margin: 0;
-        }
     }
 
     &__icon {
@@ -392,8 +395,5 @@ header {
         }
     }
 
-    p {
-        font-size: 16px;
-        font-weight: 400;
-    }
+
 }
