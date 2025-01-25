@@ -251,7 +251,6 @@ header .header__logoprincipal {
   align-items: center;
   justify-content: center;
   color: rgb(38.7404580153, 136.2595419847, 112.213740458);
-  font-weight: 500;
   font-size: 14px;
 }
 .restaurants__bas {
@@ -284,7 +283,6 @@ header .header__logoprincipal {
   width: 22px;
   height: 21px;
   cursor: pointer;
-  position: absolute;
   background-image: url("images/logo/coeur.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -367,6 +365,76 @@ header .header__logoprincipal {
 }
 .footer__link:hover {
   text-decoration: underline;
+}
+
+.detailRecette {
+  position: relative;
+}
+.detailRecette__img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+.detailRecette__div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-4rem);
+  border-radius: 40px 40px 0 0;
+  background-color: #F3F3F3;
+}
+.detailRecette__divtitre {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.detailRecette__h1 {
+  margin: 10px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  padding: 10px;
+}
+.detailRecette__divRecette {
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.detailRecette__h3 {
+  font-weight: normal;
+  margin: 0px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.detailRecette__trait {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #99E2D0;
+  transition: width 0.3s ease;
+}
+.detailRecette__detailRecette {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.detailRecette__h2 {
+  margin: 0px;
+}
+.detailRecette__divpprix {
+  display: flex;
+  justify-content: space-between;
+}
+.detailRecette__p {
+  margin-top: 3px;
+}
+.detailRecette__prix {
+  margin-top: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
