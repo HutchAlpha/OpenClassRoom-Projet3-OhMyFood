@@ -312,8 +312,27 @@ header {
     }
 
     &__logocoeur {
-        width: 22px;
-        height: 21px;
+        display: none; // Cache la checkbox
+
+        &-label {
+            width: 22px;
+            height: 21px;
+            cursor: pointer;
+            position: absolute;
+            background-image: url('images/logo/coeur.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        // Cœur rempli (état actif)
+        &:checked + &-label {
+            background-image: url('images/logo/coeur-plein.svg');
+        }
     }
 
     &__h1 {

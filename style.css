@@ -278,8 +278,23 @@ header .header__logoprincipal {
   align-items: center;
 }
 .restaurants__logocoeur {
+  display: none;
+}
+.restaurants__logocoeur-label {
   width: 22px;
   height: 21px;
+  cursor: pointer;
+  position: absolute;
+  background-image: url("images/logo/coeur.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.restaurants__logocoeur-label:hover {
+  transform: scale(1.1);
+}
+.restaurants__logocoeur:checked + .restaurants__logocoeur-label {
+  background-image: url("images/logo/coeur-plein.svg");
 }
 .restaurants__h1 {
   margin-bottom: 20px;
