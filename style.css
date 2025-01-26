@@ -250,7 +250,7 @@ header .header__logoprincipal {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(38.7404580153, 136.2595419847, 112.213740458);
+  color: #008766;
   font-size: 14px;
 }
 .restaurants__bas {
@@ -314,13 +314,13 @@ header .header__logoprincipal {
 }
 .footer__container {
   width: 100%;
-  padding-right: 50px;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 1024px) {
   .footer__container {
     flex-direction: row-reverse;
+    padding-right: 50px;
     align-items: center;
     justify-content: flex-start;
     gap: 50px;
@@ -369,6 +369,7 @@ header .header__logoprincipal {
 
 .detailRecette {
   position: relative;
+  width: 100%;
 }
 .detailRecette__img {
   width: 100%;
@@ -380,7 +381,7 @@ header .header__logoprincipal {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -4rem;
+  margin-top: -4rem;
   border-radius: 40px 40px 0 0;
   background-color: #F3F3F3;
 }
@@ -446,12 +447,17 @@ header .header__logoprincipal {
 .detailRecette__detailRecette:hover .detailRecette__divhover {
   right: 0;
 }
+.detailRecette__detailRecette:hover .detailRecette__prix {
+  transform: translateX(-60px);
+  transition: transform 0.4s ease;
+}
 .detailRecette__h2 {
   margin: 0px;
 }
 .detailRecette__divpprix {
   display: flex;
   justify-content: space-between;
+  width: auto;
 }
 .detailRecette__p {
   margin-top: 3px;
