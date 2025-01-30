@@ -19,6 +19,10 @@ h1 {
     font-size: 24px;
     line-height: auto;
   }
+h2 {
+font-size: 18px;
+line-height: auto;
+}
 p {
     font-size: 16px;
     line-height: auto;
@@ -117,7 +121,7 @@ header {
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
             background: linear-gradient(180deg, 
                 lighten(#FF79DA, 3%) 0%, 
-                lighten(#9356DC, 3%) 100%
+                lighten(#9356DC, 3%) 100%,
             );
             opacity: 0.9;
         }
@@ -415,11 +419,14 @@ header {
 
 
 .detailRecette{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%;
     &__img {
         width: 100%;
-        height: 275px;
+        height: 383px;
         object-fit: cover;
     }
 
@@ -431,17 +438,23 @@ header {
         margin-top: -4rem;
         border-radius: 40px 40px 0 0;
         background-color: $background ;    
+
+        @media (min-width: 1024px) {
+            width: 70%;
+        }
     }
 
     &__divtitre{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
         align-items: center;
         width: 100%;
+        @media (min-width: 1024px) {
+            justify-content: center;
+        }
     }
     &__h1{
-        margin: 10px;
         font-family: 'Shrikhand', sans-serif;
         font-size: 28px; 
         padding: 10px; 
