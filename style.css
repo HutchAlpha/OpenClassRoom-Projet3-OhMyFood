@@ -339,6 +339,9 @@ header .header__logoprincipal {
     margin-bottom: 0;
   }
 }
+.footer__p {
+  margin: 0px;
+}
 .footer__logoprincipal {
   width: 100px;
   filter: invert(1);
