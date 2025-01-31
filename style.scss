@@ -313,8 +313,12 @@ header {
     &__droite {
         width: 20%;
         display: flex;
-        justify-content: center;
         align-items: center;
+
+        @media (min-width: 1024px) {
+             justify-content: center;
+        }
+        
     }
 
     &__logocoeur {
@@ -425,12 +429,13 @@ header {
 }
 
 
-.detailRecette{
+.detailRecette {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     width: 100%;
+
     &__img {
         width: 100%;
         height: 383px;
@@ -439,32 +444,34 @@ header {
 
     &__div {
         width: 100%;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         position: relative;
         margin-top: -4rem;
         border-radius: 40px 40px 0 0;
-        background-color: $background ;    
+        background-color: #f6f6f6;
 
         @media (min-width: 1024px) {
             width: 70%;
         }
     }
 
-    &__divtitre{
+    &__divtitre {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
         width: 100%;
+
         @media (min-width: 1024px) {
             justify-content: center;
         }
     }
-    &__h1{
+
+    &__h1 {
         font-family: 'Shrikhand', sans-serif;
-        font-size: 28px; 
-        padding: 10px; 
+        font-size: 28px;
+        padding: 10px;
     }
 
     &__divRecette {
@@ -473,10 +480,10 @@ header {
         margin: 0 auto;
     }
 
-    &__h3{
-        font-weight: normal; 
-        margin: 0px;
-        line-height: 1.2; 
+    &__h3 {
+        font-weight: normal;
+        margin: 0;
+        line-height: 1.2;
         text-transform: uppercase;
     }
 
@@ -485,67 +492,92 @@ header {
         width: 40px;
         height: 5px;
         background-color: #99E2D0;
-        transition: width 0.3s ease;
+        margin: 5px 0 15px;
     }
 
-    &__divhover {
-        position: absolute; 
-        right: -59px; 
-        top: 0; 
-        height: 100%; 
-        width: 59px;
-        background-color: #99E2D0;
-        border-radius: 0 20px 20px 0;
-        transition: right 0.3s ease; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-
-        &::after { 
-            color: white;
-            font-size: 20px;
-        }
-    }
-    
     &__detailRecette {
-        background-color:$white;
+        background-color: white;
         border-radius: 20px;
         padding: 15px;
         margin: 15px 0;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;position: relative; 
+        position: relative;
         overflow: hidden;
+
+        &:hover {
+            .detailRecette__divhover {
+                right: 0;
+            }
+
+            .detailRecette__divpprix {
+                width: calc(100% - 60px);
+            }
+
+            .detailRecette__p {
+                width: calc(100% - 60px);
+            }
+            .detailRecette__h2 {
+                width: calc(100% - 60px);
+            }
+        }
     }
 
-    &__detailRecette:hover {
-        .detailRecette__divhover {
-            right: 0;
-        }
-        .detailRecette__prix {
-            transform: translateX(-60px); 
-            transition: transform 0.4s ease;
-        }
-    }
-    &__h2{
-        margin: 0px;
+    &__h2 {
+        margin: 0;
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    &__divpprix{
+    &__divpprix {
         display: flex;
         justify-content: space-between;
-        width: auto;
+        align-items: flex-end;
+        width: 100%;
+        transition: width 0.3s ease;
     }
 
-    &__p{
-        margin-top: 3px;
+    &__p {
+        margin: 3px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: width 0.3s ease;
+        color: #666;
+        font-size: 15px;
     }
 
-    &__prix{
-        margin-top: 3px;
+    &__prix {
+        margin: 3px 0;
         font-weight: bold;
+        white-space: nowrap;
+        transition: transform 0.3s ease;
+    }
+
+    &__divhover {
+        position: absolute;
+        right: -60px;
+        top: 0;
+        height: 100%;
+        width: 60px;
+        background-color: #99E2D0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+        border-radius: 0 20px 20px 0;
+
+        svg {
+            color: white;
+            width: 24px;
+            height: 24px;
+        }
     }
 }
+
+
 
 
 .divbouton{
