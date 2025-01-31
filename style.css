@@ -138,8 +138,9 @@ header .header__logoprincipal {
   display: flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
   position: relative;
+  background-color: #F3F3F3;
 }
 @media (min-width: 1024px) {
   .fonctionnement__step {

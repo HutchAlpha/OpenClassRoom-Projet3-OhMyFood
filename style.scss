@@ -9,6 +9,11 @@ $purple : #9356DC;
 $white : #FFFFFF;
 /*Fin variable de couleur*/
 
+@mixin FontSize ($size) {
+    font-size: $size;
+    line-height: auto;
+}
+
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -16,16 +21,13 @@ body {
 }
 /*!Style*/
 h1 {
-    font-size: 24px;
-    line-height: auto;
+    @include FontSize(24px);    
   }
 h2 {
-font-size: 18px;
-line-height: auto;
+    @include FontSize(18px);    
 }
 p {
-    font-size: 16px;
-    line-height: auto;
+    @include FontSize(16px);    
   }
 /*!FIn Style*/
 header {
@@ -141,7 +143,7 @@ header {
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 1.25rem;        
 
         @media (min-width: 1024px) {
             flex-direction: row;
@@ -158,8 +160,9 @@ header {
         display: flex;
         align-items: center;
         gap: 1rem;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
         position: relative;
+        background-color: $background;
 
         @media (min-width: 1024px) {
             flex: 1;
