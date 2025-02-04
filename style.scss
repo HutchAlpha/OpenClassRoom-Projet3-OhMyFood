@@ -34,10 +34,6 @@ body {
     animation: Body 0.8s ease-in-out;
 
 }
-
-body.page-transition {
-    animation: fade-out 0.8s ease-in-out;
-  }
 /*!Style*/
 h1 {
     @include FontSize(24px);    
@@ -55,7 +51,8 @@ header {
     display: flex;
     align-items: center;
     position: relative; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.30); 
+    
 
     .header__retour {
         width: 10%;
@@ -92,6 +89,12 @@ header {
     align-items: center;
     gap: 17px;
     background-color: $gris;
+    position: relative; 
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.30); 
+
+    @media (min-width: 1024px) {
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15); 
+    }
     
     &__img {
         width: 12px;
@@ -147,8 +150,8 @@ header {
         &:hover {
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
             background: linear-gradient(180deg, 
-                lighten(#FF79DA, 3%) 0%, 
-                lighten(#9356DC, 3%) 100%,
+                mix(white, #FF79DA, 3%) 0%, 
+                mix(white, #9356DC, 3%) 100%,
             );
             opacity: 0.9;
         }
