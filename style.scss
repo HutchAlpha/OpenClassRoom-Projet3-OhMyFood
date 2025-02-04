@@ -13,12 +13,31 @@ $white : #FFFFFF;
     font-size: $size;
     line-height: auto;
 }
-
+/*annimation scss*/
+@keyframes Body {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+      }
+    100% {
+        opacity: 1;
+    }
+  }
+/*Fin annimation scss*/
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    
+    opacity: 1;
+    animation: Body 0.8s ease-in-out;
 
 }
+
+body.page-transition {
+    animation: fade-out 0.8s ease-in-out;
+  }
 /*!Style*/
 h1 {
     @include FontSize(24px);    
@@ -89,7 +108,7 @@ header {
 .presentation{
     display: flex;
     background-color: $background;
-    padding: 20px 0 50px 0 ;
+    padding: 20px 0 25px 0 ;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -98,11 +117,17 @@ header {
     &__h1ReserveMenu{
         width: 80%;
         text-align: center;
+        font-size: 24px;
+
+        @media (min-width: 1024px) {
+            font-size: 40px;
+        }
     }
 
     &__DecoulesResto{
         width: 80%;
         text-align: center;
+        color:gray;
     }
     &__BoutonRestau{
         width: 218px;
