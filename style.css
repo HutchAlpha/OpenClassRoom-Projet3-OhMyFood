@@ -116,7 +116,12 @@ header .header__logoprincipal {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  padding: 0 2rem;
+  padding-left: 0.1rem;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__h1 {
+    padding-left: 8%;
+  }
 }
 .fonctionnement__container {
   display: flex;
@@ -177,7 +182,7 @@ header .header__logoprincipal {
 }
 .fonctionnement__text {
   margin: 0;
-  font-weight: 500;
+  font-weight: bold;
 }
 @media (min-width: 1024px) {
   .fonctionnement__text {
@@ -197,7 +202,12 @@ header .header__logoprincipal {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding-left: 1rem;
+}
+@media (min-width: 1024px) {
+  .restaurants__h1 {
+    width: 80%;
+  }
 }
 .restaurants__container {
   display: flex;

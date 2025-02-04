@@ -137,7 +137,11 @@ header {
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 1.5rem;
-        padding: 0 2rem;
+        padding-left: 0.1rem;
+
+        @media (min-width: 1024px) {
+            padding-left: 8%;
+        }
     }
 
     &__container {
@@ -200,7 +204,7 @@ header {
 
     &__text {
         margin: 0;
-        font-weight: 500;
+        font-weight: bold; 
 
         @media (min-width: 1024px) {
             text-align: center;
@@ -221,7 +225,11 @@ header {
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 1.5rem;
-        padding: 1rem;
+        padding-left: 1rem;
+
+        @media (min-width: 1024px) {
+            width: 80%;
+        }
     }
 
     &__container {
@@ -316,7 +324,7 @@ header {
         align-items: center;
 
         @media (min-width: 1024px) {
-             justify-content: center;
+            justify-content: center;
         }
         
     }
