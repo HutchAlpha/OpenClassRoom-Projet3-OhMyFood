@@ -1,5 +1,13 @@
 /*Variable de couleur*/
 /*Fin variable de couleur*/
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  opacity: 1;
+  animation: Body 0.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
 /*annimation scss*/
 @keyframes Body {
   0% {
@@ -13,13 +21,6 @@
   }
 }
 /*Fin annimation scss*/
-body {
-  margin: 0px;
-  font-family: "Roboto", sans-serif;
-  opacity: 1;
-  animation: Body 0.8s ease-in-out;
-}
-
 /*!Style*/
 h1 {
   font-size: 24px;
