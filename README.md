@@ -3,15 +3,6 @@
 Bienvenue sur le projet **OhMyFood**, une plateforme innovante dédiée à la restauration gastronomique ! Ce projet consiste à développer un site web « mobile first » qui répertorie les menus de restaurants gastronomiques et offre une expérience utilisateur unique, de la réservation à la composition personnalisée du menu.
 
 Maquette : [FIGMA](https://www.figma.com/design/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=25368-654&t=vaeDDt7W0QlzD4g5-1)
----
-
-## Table des Matières
-
-- [Contexte du Projet](#contexte-du-projet)
-- [Objectifs](#objectifs)
-- [Fonctionnalités Principales](#fonctionnalités-principales)
-- [Design et Expérience Utilisateur](#design-et-expérience-utilisateur)
-- [Architecture et Technologies](#architecture-et-technologies)
 
 ---
 
