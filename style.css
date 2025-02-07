@@ -277,6 +277,7 @@ header .header__logoprincipal {
   flex-direction: column;
   background-color: #F3F3F3;
   align-items: center;
+  padding: 30px 0;
 }
 .restaurants__h1 {
   width: 90%;
@@ -306,8 +307,7 @@ header .header__logoprincipal {
   }
 }
 .restaurants__article {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   background-color: #FFFFFF;
   border-radius: 20px;
   overflow: hidden;
@@ -316,13 +316,13 @@ header .header__logoprincipal {
 }
 @media (min-width: 1024px) {
   .restaurants__article {
-    width: 40%;
+    width: calc(50% - 12.5px);
   }
 }
 .restaurants__a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: inherit;
-  width: 100%;
+  display: block;
 }
 .restaurants__haut {
   position: relative;
@@ -333,30 +333,22 @@ header .header__logoprincipal {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
 }
 .restaurants__badge {
   position: absolute;
   top: 15px;
   right: 15px;
-  width: 80px;
-  height: 29px;
+  padding: 8px 12px;
   background-color: #99E2D0;
-  border-bottom: 1px solid #99E2D0;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #008766;
+  border-radius: 2px;
   font-size: 14px;
 }
 .restaurants__bas {
-  width: 100%;
-  display: flex;
   padding: 15px;
 }
 .restaurants__gauche {
-  width: 80%;
+  padding-right: 40px;
 }
 .restaurants__nom {
   font-size: 18px;
@@ -364,18 +356,14 @@ header .header__logoprincipal {
   margin: 0 0 5px 0;
 }
 .restaurants__adresse {
-  font-size: 13px;
+  font-size: 17px;
   margin: 0;
 }
 .restaurants__droite {
-  width: 20%;
-  display: flex;
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  .restaurants__droite {
-    justify-content: center;
-  }
+  position: absolute;
+  top: 80%;
+  right: 25px;
+  z-index: 2;
 }
 .restaurants__logocoeur {
   display: none;
@@ -384,19 +372,17 @@ header .header__logoprincipal {
   width: 22px;
   height: 21px;
   cursor: pointer;
+  display: block;
   background-image: url("images/logo/coeur.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 .restaurants__logocoeur-label:hover {
   transform: scale(1.1);
 }
 .restaurants__logocoeur:checked + .restaurants__logocoeur-label {
   background-image: url("images/logo/coeur-plein.svg");
-}
-.restaurants__h1 {
-  margin-bottom: 20px;
 }
 
 .footer {
@@ -464,6 +450,8 @@ header .header__logoprincipal {
   height: 16px;
 }
 .footer__link {
+  text-decoration: none;
+  color: #FFFFFF;
   margin: 0;
   cursor: pointer;
 }
