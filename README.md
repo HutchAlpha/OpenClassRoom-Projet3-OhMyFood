@@ -55,6 +55,4 @@ OhMyFood est une jeune startup ambitieuse déjà présente à New-York qui souha
 Le projet sera réalisé en suivant une architecture moderne et modulable, incluant :
 
 - **HTML5 & CSS3 :** Pour la structure et le style, en respectant les standards du web.
-- **JavaScript :** Pour l’interactivité et les animations.
-- **Frameworks et Librairies :** Possibilité d’utiliser des frameworks front-end (comme React, Vue.js ou Angular) selon les besoins du projet.
 - **Responsive Design :** Utilisation de media queries et de techniques modernes pour garantir une adaptation parfaite sur tous les écrans.
